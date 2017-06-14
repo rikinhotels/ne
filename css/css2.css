@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contact{font-family:Verdana, Geneva, sans-serif;
+color:#000}
+
+.enqformtext{font-family:Verdana, Geneva, sans-serif;
+font-size:13px;
+color:white;
+}
+
+#enqpage{
+	width:800px;
+	height:425px;
+	text-align:left;
+	vertical-align:top;
+	padding:25px;
+	color:white;
+}
+textarea{resize:none}
+
+.wrapperenq{
+	float:left;
+	width: 900px;
+	height:700px;
+	color:#FFF;
+	background-color:#000000;
+}
+.conpage{background-color:#000;
+width:900px;
+height:500px;
+font-family:Verdana, Geneva, sans-serif;
+float:left;
+color:#fff;
+}
+.conpage2{
+width:900px;
+text-align:left;
+margin-top:10px;
+margin-left:100px;
+}
+.conpage3{
+width:800px;
+height:30px;
+background-color:#464646;
+padding-left:100px;
+}
+.conpage4{
+width:200px;
+text-align:left;
+margin-left:100px;
+font-size:13px;
+margin-top:10px;
+
+}
+.conpage5{
+width:600px;
+text-align:left;
+}
+
+.txt{font-family:Verdana, Geneva, sans-serif;
+font-size:13px;
+margin-left:10px}
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/main.css" type="text/css" rel="stylesheet"/>
+<link href="css/css2.css" type="text/css" rel="stylesheet"/>
+<title>::  Navkar Engineering  ::</title>
+
+<script type="text/javascript">
+function checkfield()
+{
+	if(!document.form.fname.value)
+	{
+		alert("Please enter your name");
+		document.form.fname.focus();
+		return false;
+	}
+	if(!document.form.compName.value)
+	{
+		alert("Please enter your comapany name");
+		document.form.compName.focus();
+		return false;
+	}
+	if(!document.form.phoneno.value && !document.form.mobileno.value)
+	{
+		alert("Please enter your contact details");
+		document.form.phoneno.focus();
+		return false;
+	}
+	if(!document.form.email.value)
+	{
+		alert("Please enter your Email Id");
+		document.form.email.focus();
+		return false;
+	}
+	else
+	{
+		if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.form.email.value))  
+			{  
+			}  
+		else
+			{
+				alert("You have entered an invalid email address!")  
+				return (false);
+			}
+	}
+	if(!document.form.address.value)
+	{
+		alert("Please enter your company address");
+		document.form.address.focus();
+		return false;
+	}
+	if(!document.form.requ.value)
+	{
+		alert("Please specify your requirement");
+		document.form.requ.focus();
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+
+<body>
+<table align="center" height="auto">
+<tr>
+<td>
+<div class="wrapper">
+    <div class="wrappertop">
+    <div class="logo">
+    <img src="images/navkar.gif" />
+    </div>
+    <div class="godsign"><img src="images/web-layout-5_04.gif" /></div>
+    
+    <div class="menu">
+        <div id="menu1" class="menufont1"><a href="Index.html">Home<br />
+        </a>
+          <p class="menufont2"><a href="Index.html">This is main page</a></p></div>
+        <div id="menu1"><img src="images/menu line.gif" /></div>
+        <div id="menu1" class="menufont1"><a href="About us.html">About Us<br />
+        </a>
+          <p class="menufont2"><a href="About us.html">All about our company</a></p></div>
+        <div id="menu1"><img src="images/menu line.gif" /></div>
+        <div id="menu1" class="menufont1"><a href="Product range.html">Product Range<br />
+        </a>
+          <p class="menufont2"><a href="Product range.html">All products info</a></p></div>
+        <div id="menu1"><img src="images/menu line.gif" /></div>
+        <div id="menu1" class="menufont1"><a href="Enquiry form.html">Enquiry Form<br /> 
+        </a>
+          <p class="menufont2"><a href="Enquiry form.html">Any enquiry about</a></p></div>
+        <div id="menu1"><img src="images/menu line.gif" /></div>
+        <div id="menu1" class="menufont1"><a href="Contac us.html">Contact Us<br />
+        </a>
+          <p class="menufont2"><a href="Contac us.html">For any help</a></p></div>
+        </div>
+    </div>
+
+    <div>
+	<div name="enqpage">
+	<form name="form" action="mailscript_enquiryForm.php" method="post">
+			<table width="900px" cellpadding="10px" align="left">
+			<tr >
+			<td colspan="2">
+			<font size="4px"><center><font color="red" face="arial"><strong>Enquiry Form</strong></font></center></font>
+			</td>
+			</tr>
+			<tr  class="enqformtext">
+			<td width="250px">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name :-
+			</td>
+			<td>
+			<input type="text" name="name" size="50">
+			</td>
+			</tr>
+			<tr class="enqformtext">
+			<td width="250px">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company Name :-
+			</td>
+			<td>
+			<input type="text" name="compName" size="50">
+			</td>
+			</tr>
+			<tr  class="enqformtext">
+			<td width="250px">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pnone No. :-
+			</td>
+			<td>
+			<input type="text" name="phoneno" size="50">
+			</td>
+			</tr>
+			<tr  class="enqformtext">
+			<td width=250px>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile no. :-
+			</td>
+			<td>
+			<input type="text" name="mobileno" size="50">
+			</td>
+			</tr>
+			<tr  class="enqformtext">
+			<td width=250px>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email id :-
+			</td>
+			<td>
+			<input type="text" name="email" size="50">
+			</td>
+			</tr>
+			<tr  class="enqformtext">
+			<td width="250px">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Address :-
+			</td>
+			<td>
+			<textarea cols="38" rows="3" name="address"></textarea>
+			</td>
+			</tr>
+			<tr  class="enqformtext">
+			<td width="250px">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Requirement :-
+			</td>
+			<td>
+			<textarea cols="38" rows="3" name="requ" value=''></textarea>
+			</td>
+			</tr>
+			<tr  class="enqformtext">
+			<td width="250px" align="right">
+			
+			</td>
+			<td>
+			<input type="submit" value="Submit" onclick="return checkfield()"> 
+			<input type="Reset" value="Reset">
+			</td>
+			</tr>
+			</table>
+		</form>
+	</div>
+</div>
+
+	<div class="bottom"><br />
+	<a href="index.html">Home</a> | <a href="About us.html">About us</a> | <a href="Product range.html">Product range</a> | <a href="Enquiry form.html">Enquiry form</a> |<a href="Contac us.html">Contact us</a></p>
+	<p>&copy;Copyright Navkar engineering. Site developed and maintained by Geetanjali<p>
+	<p></p>
+
+	</div>
+</div>
+<td>
+</tr>
+</table>
+</body>
+</html>
