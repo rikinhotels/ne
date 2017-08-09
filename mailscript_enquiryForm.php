@@ -1,6 +1,6 @@
 <?
 
-        $mailto="md@navkarengg.com , sales@navkarengg.com"; 
+        $mailto="info@navkarengg.com , sales@navkarengg.com"; 
         $pcount=0;
         $gcount=0;
         $subject = "Mail from Enquiry Form";
